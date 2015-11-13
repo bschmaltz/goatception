@@ -18,7 +18,7 @@ checkForEmailToGoats = function(e){
 
 function goatcept(){
   //super hack activate - audio has ~5 seconds of no noise to since with createGIF's lag
-  new Audio('https://raw.githubusercontent.com/bschmaltz/goatception/master/audio/spam2.mp3').play();
+  new Audio('https://raw.githubusercontent.com/bschmaltz/goatception/master/audio/spam3.mp3').play();
   gifshot.createGIF({}, function(obj) {
     if(!obj.error) {
       imgurClient.upload(obj.image);
