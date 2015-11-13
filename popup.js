@@ -7,13 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.onclick = function(e){
   console.log('click', e);
-  if(composeButtonClicked(e)){
-    console.log('compose clicked')
-    $('input[name=to]').onkeydown = function(){
-      console.log('swag' + $('input[name=to]').value);
-    }
-  }else if(sendButtonClicked(e)){
+  if(sendButtonClicked(e)){
     var emailInfo = getEmailInfo();
+    debugger;
     if(emailInfo.to === "goats@yelp.com"){
       goatcept();
     }
@@ -21,7 +17,7 @@ document.onclick = function(e){
 }
 
 function goatcept(){
-  new Audio('http://soundbible.com/grab.php?id=1570&type=mp3').play();
+  new Audio('https://raw.githubusercontent.com/bschmaltz/goatception/master/audio/spam.mp3').play();
   gifshot.createGIF({}, function(obj) {
     if(!obj.error) {
       imgurClient.upload(obj.image);
