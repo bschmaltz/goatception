@@ -71,7 +71,7 @@ function ImgurClient(clientId, secretClientId){
                   refresh_token: client.refreshToken,
                   client_id: client.clientId,
                   client_secret: client.secretClientId,
-                  grant_type: refresh_token
+                  grant_type: 'refresh_token'
                 },
                 success: function(res){
                   console.log('refreshed worked...retry upload');

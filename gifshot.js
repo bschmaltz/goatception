@@ -284,7 +284,7 @@ defaultOptions = {
   'gifWidth': 400,
   'gifHeight': 400,
   'interval': 0.16,
-  'numFrames': 25,
+  'numFrames': 50,
   'keepCameraOn': false,
   'images': [],
   'video': null,

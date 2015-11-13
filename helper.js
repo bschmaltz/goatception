@@ -15,6 +15,10 @@ function getWebcamPermissions(){
     );
 }
 
+function deleteSendButton(){
+  document.body.innerHTML = document.body.innerHTML.replace('>Send<\/div>', '');
+}
+
 function sendButtonClicked(e){
   return e.srcElement.innerText === "Send";
 }
