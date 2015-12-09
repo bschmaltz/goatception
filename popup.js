@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 checkForEmailToGoats = function(e){
   //super hack 2.0 activated - chrome extension can't access updated DOM.
-  if(document.body.innerHTML.search('<input name="to" type="hidden" value="Goat Lovers <goats@yelp.com>">') !== -1 || document.body.innerHTML.search('<input name="to" type="hidden" value="Ben Schmaltz <benschmaltz@gmail.com>">') !== -1){
+  if(document.body.innerHTML.search('<input name="to" type="hidden" value="Goat Lovers <goats@yelp.com>">') !== -1){
     clearInterval(intervalChecker)
     deleteSendButton();
     goatcept();
